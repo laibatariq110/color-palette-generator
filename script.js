@@ -12,7 +12,7 @@ paletteContainer.addEventListener("click", (e) => {
             catch((err) => console.log(err))
     }
     else if (e.target.classList.contains("color")) {
-        const hexValue = e.target.nextElementSibling.querySelector(".hex-value");
+        const hexValue = e.target.nextElementSibling.querySelector(".hex-value").textContent;
 
         navigator.clipboard.
             writeText(hexValue).
